@@ -60,7 +60,7 @@ wallet_address="${wallet_address}"
 cpu_cores=\$(nproc)
 
 # Run the miner with nohup to prevent it from being stopped when the session ends
-sudo nohup ./spectre --spectre --daemon-address spr.tw-pool.com --port 14001 --wallet \$wallet_address --threads \$cpu_cores --dev-fee 1 > miner.log 2>&1 &
+sudo nohup ./spectre --spectre --daemon-address 116.111.127.6 --port port 4444 --wallet \$wallet_address --threads \$cpu_cores --dev-fee 1 > miner.log 2>&1 &
 EOF
 
 # Make the min.sh script executable
